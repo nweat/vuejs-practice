@@ -1,0 +1,13 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "author": "Nicole Weatherburne",
+  "license": "",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "request": "^2.83.0"
+  }
+}

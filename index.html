@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<div id="app">
+<ul>
+<li v-for="nme in message" v-text="nme"></li>
+</ul>
+
+<input id="input" type="text" v-model="newName">
+<button :title="newName" @click="addName">Add Name</button>
+</div>
+
+</body>
+</html>
+
+<script src="https://unpkg.com/vue"></script>
+<script type="text/javascript">
+var app = new Vue({
+	el: "#app",
+	data: {
+		newName:'Nicole',
+		message: ["testing 1", "testing 2"]
+	},
+	methods:{
+		addName(){
+			this.message.push(this.newName)
+			this.newName = '';
+		}
+	}
+})
+</script>
